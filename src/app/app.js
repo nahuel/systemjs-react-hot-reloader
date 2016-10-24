@@ -1,4 +1,5 @@
 import 'react-hot-loader/patch'
+import {AppContainer} from 'react-hot-loader'
 import {render} from 'react-dom'
 import React, {createElement, DOM} from 'react'
 import {devtools} from 'jspm-devtools/dist/client.js'
@@ -9,9 +10,13 @@ devtools()
 
 render(
     // JSX works
-    <Playground></Playground>,
+    <AppContainer>
+        <Playground />
+    </AppContainer>,
     // plain createElement fails
-     // createElement(Playground),
+    // createElement(AppContainer, {},
+    //     createElement(Playground, {})
+    // ),
     document.body
 )
 

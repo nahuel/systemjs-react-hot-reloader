@@ -1,6 +1,7 @@
 /**
  * Created by alexisvincent on 2016/09/03.
  */
+require('dotenv').config({silent: true});
 const express = require('express')
 const spdy = require('spdy')
 // const spdy = require('spdy-push')
