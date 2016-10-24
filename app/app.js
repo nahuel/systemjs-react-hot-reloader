@@ -1,16 +1,23 @@
-import 'isomorphic-fetch'
-import 'react-hot-loader/patch';
-import { AppContainer } from 'react-hot-loader/lib/index.js';
-import { render } from 'react-dom'
-import { createElement as $ } from 'react'
+import 'react-hot-loader/patch'
+// import {build} from 'js-kernel'
+import {render} from 'react-dom'
+import React, {createElement, DOM} from 'react'
+import {devtools} from 'jspm-devtools/dist/client.js'
 
-import Root from 'dibbs/containers/Root/Root'
+import Dashboard from './routes/dashboard/dashboard.js'
 
-render(
-    $(AppContainer, {}, 
-        $(Root)
-    ), 
-    document.getElementById('root')
-)
+devtools()
 
-console.log("App Imported")
+// import reducer from './reducer.js'
+// import routes from './routes.js'
+
+// const kernel = build({
+//     routes,
+//     reducer
+// })
+
+// kernel.render()
+
+
+render(createElement(Dashboard), document.body)
+
