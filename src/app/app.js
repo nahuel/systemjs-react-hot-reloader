@@ -8,8 +8,10 @@ import Playground from './playground.js'
 devtools()
 
 render(
+    // JSX works
     <Playground></Playground>,
-    // createElement(Playground),
+    // plain createElement fails
+     // createElement(Playground),
     document.body
 )
 

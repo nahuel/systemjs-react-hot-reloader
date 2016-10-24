@@ -14,8 +14,12 @@ class Playground extends React.Component {
 	render() {
 		return (
 			<div>
+                <div>
+					Edit this text first to perform first reload,
+					then click the text below to set state,
+					then edit the text again
+				</div>
 				<p onClick={() => this.setState({test: "Some state is now set"})} > {this.state.test}</p>
-                <div>Some text to test hotreloading asdf</div>
 			</div>
 		)
 	}
