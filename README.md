@@ -1,4 +1,4 @@
-# systemsjs react-hot-reloader
+# systemjs react-hot-reloader
 Get React Hot Reloader working with systemjs
 
 To reproduce:
